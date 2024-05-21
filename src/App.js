@@ -11,7 +11,7 @@ function App() {
     <Router>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Singup></Singup>}></Route>
+        <Route path="/Singup" element={<Singup></Singup>}></Route>
         <Route path="/Profile" element={<Profile></Profile>}></Route>
       </Routes>
     </Router>
