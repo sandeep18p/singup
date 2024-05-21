@@ -21,7 +21,7 @@ export default function Signup() {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <h1>Signup</h1>
+        <h1>Signup</h1> 
         <input
           type="text"
           placeholder="Full Name"
