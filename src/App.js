@@ -12,7 +12,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Singup></Singup>}></Route>
-        <Route path="/profile" element={<Profile></Profile>}></Route>
+        <Route path="/Profile" element={<Profile></Profile>}></Route>
       </Routes>
     </Router>
     </>

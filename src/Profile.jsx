@@ -5,11 +5,12 @@ import { logout } from "./authSlice";
 import { useEffect } from "react";
 
 export default function Profile() {
-  const user = useSelector((state) => state.auth);
+  // const user = useSelector((state) => state.auth);
+  let user = JSON.parse(localStorage.getItem("auth"));
   const dispatch = useDispatch();
   const navigate = useNavigate();
 useEffect(() => {
-    if (!user.access_token) {
+    if (!user || !user.access_token ) {
      
        navigate('/');
     }
@@ -22,6 +23,8 @@ useEffect(() => {
     console.log(localStorage.getItem('auth'))
     dispatch(logout());
     console.log(" 2 * ",user)
+    user=null;
+    navigate('/');
     console.log(localStorage.getItem('auth'))
     // navigate('/signup');
   };

@@ -4,7 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { login } from "./authSlice";
 
 const Signup = () => {
-    const user = useSelector((state) => state.auth);
+    // const user = useSelector((state) => state.auth);
+    const user = JSON.parse(localStorage.getItem("auth"));
+    console.log(user);
     const dispatch=useDispatch();
   const [inputs, setInputs] = useState({
     name: "",
@@ -16,9 +18,9 @@ const Signup = () => {
   const [showMsg, setShowMsg] = useState(false);
 
   useEffect(() => {
-    if (user.access_token) {
+    if (user && user.access_token) {
      
-       navigate('/profile');
+       navigate('/Profile');
     }
   }, [user]);
 
