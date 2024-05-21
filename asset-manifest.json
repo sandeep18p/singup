@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/singup/static/css/main.5f72fdce.css",
+    "main.js": "/singup/static/js/main.a434d266.js",
+    "static/js/453.3520ef1d.chunk.js": "/singup/static/js/453.3520ef1d.chunk.js",
+    "static/media/logo.svg": "/singup/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/singup/index.html",
+    "main.5f72fdce.css.map": "/singup/static/css/main.5f72fdce.css.map",
+    "main.a434d266.js.map": "/singup/static/js/main.a434d266.js.map",
+    "453.3520ef1d.chunk.js.map": "/singup/static/js/453.3520ef1d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f72fdce.css",
+    "static/js/main.a434d266.js"
+  ]
+}
